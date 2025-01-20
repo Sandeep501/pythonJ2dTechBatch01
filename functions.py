@@ -1,6 +1,6 @@
-condition = input("Please enter the operation: ")
-num1 = int(input("Please enter num1: "))
-num2 = int(input("Please enter num2: "))
+# condition = input("Please enter the operation: ")
+# num1 = int(input("Please enter num1: "))
+# num2 = int(input("Please enter num2: "))
 
 
 def add(num1, num2):
@@ -33,4 +33,13 @@ def operation(cond, a, b):
     return result
 
 
-print(operation(condition, num1, num2))
+# print(operation(condition, num1, num2))
+
+
+
+# default parameters
+def employee(empName: str, depName: str, salary: int = 10000) -> str:
+    print(f"{empName} salary is: {salary}")
+    
+employee("Balaji")
+employee("Arvind", 30000)
